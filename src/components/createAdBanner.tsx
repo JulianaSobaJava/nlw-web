@@ -1,8 +1,4 @@
-// interface GameProps {
-//     imageUrl: string;
-//     title: string;
-//     adsCount: number;
-// }
+import * as Dialog from '@radix-ui/react-dialog';
 
 import { MagnifyingGlassPlus } from 'phosphor-react';
 
@@ -15,9 +11,9 @@ export function CreateAdBanner() {
                     <span className='text-zinc-400 text-sm block'>Publique um anúncio para encontrar novos players!</span>
                 </div>
 
-                <button className='py-3 px-4 bg-violet-500 text-white rounded hover:bg-violet-600 flex items-center gap-3'>
+                <Dialog.Trigger className='py-3 px-4 bg-violet-500 text-white rounded hover:bg-violet-600 flex items-center gap-3'>
                     <MagnifyingGlassPlus size={24} />
-                    Publicar anúncios</button>
+                    Publicar anúncios</Dialog.Trigger>
             </div>
 
         </div>
